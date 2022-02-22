@@ -232,8 +232,6 @@ start(){
 	uci set firewall.@defaults[0].flow_offloading_hw="${hw_flow}"
 	uci set firewall.@defaults[0].fullcone="${fullcone_nat}"
 	uci commit firewall
-	
-	/etc/init.d/turboacc_fss start
 
 	/etc/init.d/turboacc_fss start
 
